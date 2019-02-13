@@ -248,7 +248,7 @@ public class Main extends Application {
                             circ[i] = circ[min];
                             circ[min] = temporary;
                         }
-//                        rect[i].setStyle(
+//                        circ[i].setStyle(
 //                                "-fx-background-radius: 12; " +
 //                                "-fx-background-color: gold; " +
 //                                "-fx-font-family: Verdana; " +
@@ -264,12 +264,12 @@ public class Main extends Application {
 
     private Label[] createLabels(int[] arr)
     {
-        Label[] rect = new Label[arr.length];
+        Label[] circ = new Label[arr.length];
 
         for(int i = 0; i < arr.length; i++)
-            createLabel(i, arr, rect);
+            createLabel(i, arr, circ);
 
-        return rect;
+        return circ;
     }
 
     private void createLabel(int i, int[] arr, Label[] rect) {
